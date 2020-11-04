@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let peso = prompt("cuanto pesas");
+        
+        
+        let gravedad =
+        {
+            tierra : 9.807,
+            mercurio : 3.7,
+            venus : 8.87,
+            marte : 3.711,
+            jupiter : 24.79,
+            saturno : 10.44,
+            urano : 8.87,
+            neptuno : 11.15,
+            luna : 1.62
+        }
+        pesoEnTierra = peso
+        pesoEnMercurio = parseInt(peso / gravedad.tierra *  gravedad.mercurio)
+        pesoEnVenus = parseInt(peso / gravedad.tierra *  gravedad.venus)
+        pesoEnMarte = parseInt(peso / gravedad.tierra *  gravedad.marte)
+        pesoEnJupiter = parseInt(peso / gravedad.tierra *  gravedad.jupiter)
+        pesoEnSaturno = parseInt(peso /gravedad.tierra  *  gravedad.saturno)
+        pesoEnUrano = parseInt(peso /gravedad.tierra *  gravedad.urano)
+        pesoEnNeptuno = parseInt(peso / gravedad.tierra *  gravedad.neptuno)
+        pesoEnLuna = parseInt(peso / gravedad.tierra * gravedad.luna)
+
+        document.write(`tu peso en la Tierra es <strong> ${pesoEnTierra} </strong><br>`)
+        document.write(`tu peso en Mercurio es <strong> ${pesoEnMercurio} </strong><br>`)
+        document.write(`tu peso en venus es <strong> ${pesoEnVenus} </strong><br>`)
+        document.write(`tu peso en Marte es <strong> ${pesoEnMarte} </strong><br>`)
+        document.write(`tu peso en Jupiter es <strong> ${pesoEnJupiter} </strong><br>`)
+        document.write(`tu peso en Saturno es <strong> ${pesoEnSaturno} </strong><br>`)
+        document.write(`tu peso en Urano es <strong> ${pesoEnUrano} </strong><br>`)
+        document.write(`tu peso en Neptuno es <strong> ${pesoEnNeptuno} </strong><br>`)
+        document.write(`tu peso en la Luna es <strong> ${pesoEnLuna} </strong><br>`)
+
+
+        
+    </script>
+</body>
+</html>
